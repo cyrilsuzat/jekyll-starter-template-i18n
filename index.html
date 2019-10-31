@@ -1,7 +1,13 @@
 ---
 layout: default
-title: Jekyll starter template
-lang: en
+title: Redirecting...
 ---
 
-{% include greetings.html %}
+<p>
+  Redirecting to {% link en/index.html %}.
+  If it doesn't load, click <a href="{% link en/index.html %}">here</a>.
+</p>
+
+<script type="text/javascript">
+  window.location.href = "{% link en/index.html %}"
+</script>
