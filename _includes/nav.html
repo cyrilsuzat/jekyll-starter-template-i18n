@@ -1,4 +1,12 @@
 <div id="nav">
-  <a href="{% link en/index.html %}">EN</a> |
-  <a href="{% link fr/index.html %}">FR</a>
+  <ul>
+    {% for locale in site.data.locales %}
+      <li>
+        <a href="{% link {{ page.path | replace_first: page.lang, locale[0] }} %}"
+           class="{% if locale[0] == page.lang %}active{% endif %}">
+          {{ locale[0] | upcase }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
 </div>
