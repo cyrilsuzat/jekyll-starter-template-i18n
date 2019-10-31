@@ -2,7 +2,8 @@
   <h1>{{ t.title }}</h1>
 
   <p class="lead">
-    {{ t.lead }}
+    {{ t.lead }} <br>
+    <a href="{% link {{ page.lang}}/about.html %}">{{ t.about }}</a>
   </p>
 
   <p class="links">
