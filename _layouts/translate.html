@@ -1,3 +1,6 @@
+{% assign filename = page.name | split: '.' | first -%}
+{% assign t = site.data.locales[page.lang][filename] -%}
+
 <!DOCTYPE html>
 <html lang="{{ page.lang }}">
 <head>
@@ -8,11 +11,10 @@
   <!-- CSS -->
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>{{ page.title }}</title>
+  <title>{{ t.title }}</title>
 </head>
 <body>
 
-  {% assign t = site.data.locales[page.lang] %}
   {% include {{ page.name }} %}
 
 </body>
