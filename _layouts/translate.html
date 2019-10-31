@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: 'en' }}">
+<html lang="{{ page.lang }}">
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -12,7 +12,8 @@
 </head>
 <body>
 
-  {{ content }}
+  {% assign t = site.data.locales[page.lang] %}
+  {% include {{ page.name }} %}
 
 </body>
 </html>
