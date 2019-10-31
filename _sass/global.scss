@@ -19,7 +19,14 @@ body {
   background-color: $body-bg;
 }
 
-.starter-template {
+#nav {
+  background: #000;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+#container {
   display: grid;
   min-height: 100vh;
   place-content: center;

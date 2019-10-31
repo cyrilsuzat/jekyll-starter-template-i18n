@@ -1,13 +1,3 @@
-<div class="starter-template">
-  <h1>{{ t.title }}</h1>
-
-  <p class="lead">
-    {{ t.lead }} <br>
-    <a href="{% link {{ page.lang}}/about.html %}">{{ t.about }}</a>
-  </p>
-
-  <p class="links">
-    <a href="{% link en/index.html %}">EN</a> |
-    <a href="{% link fr/index.html %}">FR</a>
-  </p>
-</div>
+<h1>{{ t.title }}</h1>
+<p>{{ t.lead }}</p>
+<a href="{% link {{ page.lang}}/about.html %}">{{ t.about }}</a>

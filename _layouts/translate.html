@@ -15,7 +15,10 @@
 </head>
 <body>
 
-  {% include {{ page.name }} %}
+  <div id="container">
+    {% include nav.html %}
+    {% include {{ page.name }} %}
+  </div>
 
 </body>
 </html>
