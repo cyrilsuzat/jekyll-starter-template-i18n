@@ -3,7 +3,8 @@
 Basic template to quickly start projects with [Jekyll](https://jekyllrb.com/).
 
 :white_check_mark: Compatible with Jekyll 3.8 & 4.0, and GitHub Pages  
-:white_check_mark: Ready for internationalization
+:white_check_mark: Ready for internationalization  
+:white_check_mark: Demo : https://cyrilsuzat.com/jekyll-starter-template/
 
 ## Usage
 
