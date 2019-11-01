@@ -2,6 +2,9 @@
 
 Basic template to quickly start projects with [Jekyll](https://jekyllrb.com/).
 
+:white_check_mark: Compatible with Jekyll 3.8 & 4.0, and GitHub Pages  
+:white_check_mark: Ready for internationalization
+
 ## Usage
 
 1 - Download and extract the [ZIP archive](https://github.com/cyrilsuzat/jekyll-starter-template/archive/master.zip)  
