@@ -2,7 +2,7 @@
   <ul>
     {% for locale in site.data.locales %}
       <li>
-        <a href="{% link {{ page.path | replace_first: page.lang, locale[0] }} %}"
+        <a href="{{ page.path | replace_first: page.lang, locale[0] | replace: '/index.html', ''| replace: '.html', '' | relative_url }}"
            class="{% if locale[0] == page.lang %}active{% endif %}">
           {{ locale[0] | upcase }}
         </a>
